@@ -1,0 +1,31 @@
+.search
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search input
+{
+    border-radius: 10rem 0 0 10rem;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color: whitesmoke;
+    padding: 1.2rem;
+    outline: none;
+}
+
+div button
+{
+    color: black;
+    border: none;
+    border-radius: 0 10rem 10rem 0;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+div button:hover
+{
+    opacity: 1;
+}

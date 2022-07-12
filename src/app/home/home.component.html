@@ -1,0 +1,21 @@
+<app-search></app-search>
+<ul>
+    <li *ngFor="let food of foods">
+        <a href=""><img src="{{food.imageUrl}}" alt="Food Image">
+
+            <div class="content">
+                <div class="name">
+                    {{food.name}}
+                </div>
+                <div class="price">
+                    {{food.price|currency:'INR'}}
+                </div>
+            </div>
+        </a>
+        
+    </li>
+
+</ul>
+<div class="notfound">
+<p *ngIf="foods.length===0"> No Such Items</p>
+</div>

@@ -1,0 +1,47 @@
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a{
+    height: 22.5rem;
+    width: 25 rem;
+    border: 1px solid green;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+li a:hover{
+    opacity: 0.9;
+}
+
+.content
+{padding: .5rem 1rem;
+    position: relative;
+
+}
+.price
+{
+    color: grey;
+    margin-top: .2rem;
+}
+
+p
+{
+    display: block;
+}
+.notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
