@@ -2,11 +2,11 @@ header
 {
     background-color: white;
     padding: 0;
-    border-bottom: 1px solid #e72929;
+    border-bottom: 1px solid #5e17eb;
 }
 
 a{
-    background-color: #af1313;
+    background-color: #5e17eb;
     color: white;
 }
 
@@ -15,12 +15,16 @@ a{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    background-color: #5e17eb;
 }
 
 a.logo
 {
     font-weight: bold;
-    padding: 1em;
+    padding: 1rem ;
+    background-color: #1e0059;
+    border-radius: 10px;
+    margin: 7px;
 }
 
 nav ul
@@ -34,4 +38,21 @@ nav ul li a
 {
     padding: 1em;
     display: inline-block
+}
+
+a.cart
+{
+    font-weight: bold;
+    padding: 0.6rem ;
+    background-color: #1e0059;
+    border-radius: 10px;
+    margin: 7px;
+    display: flex;
+}
+
+a.cart:hover
+{
+    background-color: white;
+    color: #1e0059;
+    cursor: pointer;
 }

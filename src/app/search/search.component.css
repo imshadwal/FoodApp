@@ -1,6 +1,6 @@
 .search
 {
-    margin-top: 2rem;
+    margin-top: 0.7rem;
     display: flex;
     justify-content: center;
 }
@@ -18,11 +18,12 @@
 
 div button
 {
-    color: black;
+    color: white;
     border: none;
     border-radius: 0 10rem 10rem 0;
     cursor: pointer;
     padding: 1rem;
+    background-color: #1e0059;
 }
 
 div button:hover
