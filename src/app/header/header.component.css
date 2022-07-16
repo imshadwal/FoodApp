@@ -37,7 +37,7 @@ nav ul
 nav ul li a
 {
     padding: 1em;
-    display: inline-block
+    display: inline-block;
 }
 
 a.cart
@@ -55,4 +55,8 @@ a.cart:hover
     background-color: white;
     color: #1e0059;
     cursor: pointer;
+}
+li
+{
+    display: inline;
 }
