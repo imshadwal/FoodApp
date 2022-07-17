@@ -7,8 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { LoginComponent } from './login/login.component';
 import { ModalComponent } from './modal/modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -18,7 +18,6 @@ import { ModalComponent } from './modal/modal.component';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    LoginComponent,
     ModalComponent
   ],
   imports: [
@@ -26,6 +25,7 @@ import { ModalComponent } from './modal/modal.component';
     AppRoutingModule,
     FormsModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
