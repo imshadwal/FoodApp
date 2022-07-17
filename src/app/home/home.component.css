@@ -8,8 +8,8 @@ ul
     padding: 0;
 }
 
-ul li a{
-    height: 22.5rem;
+.MainHeader{
+    height: 24rem;
     width: 25 rem;
     border: 1px solid #5e17eb;
     border-radius: 1rem;
@@ -25,7 +25,7 @@ li a:hover{
 }
 
 .content
-{padding: .5rem 1rem;
+{   padding: .5rem 1rem;
     position: relative;
 
 }
@@ -44,4 +44,10 @@ p
     justify-content: center;
     align-items: center;
     height: 500px;
+}
+
+.details
+{
+    justify-content: right;
+    display: inline;
 }

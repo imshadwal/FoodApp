@@ -101,15 +101,6 @@ getAll():Foods[]{
       tags:['Fastfood','Pizza','Lunch'],
       imageUrl:'/assets/food9.jpg',
     },
-    {
-      id:1,
-      price: 399,
-      name:'Kachodi',
-      favourite:false,
-      star:4.5,
-      tags:['Fastfood','Pizza','Lunch'],
-      imageUrl:'/assets/2021-11-24.jpg',
-    },
   
   ];
 }

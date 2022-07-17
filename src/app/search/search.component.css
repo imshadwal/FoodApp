@@ -22,7 +22,7 @@ div button
     border: none;
     border-radius: 0 10rem 10rem 0;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #1e0059;
 }
 
@@ -30,3 +30,4 @@ div button:hover
 {
     opacity: 1;
 }
+
