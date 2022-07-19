@@ -85,6 +85,7 @@ a.SignUp
     margin: 7px;
     display: flex;
     color: #1e0059;
+    text-decoration: none;
 }
 
 a.Login

@@ -7,8 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ModalComponent } from './modal/modal.component';
+import { ModalComponent } from './loginmodal/modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CartComponent } from './cart/cart.component';
+import { CorouselComponent } from './corousel/corousel.component';
+import { SignupmodalComponent } from './signupmodal/signupmodal.component';
 
 
 
@@ -18,7 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    ModalComponent
+    ModalComponent,
+    CartComponent,
+    CorouselComponent,
+    SignupmodalComponent
   ],
   imports: [
     BrowserModule,

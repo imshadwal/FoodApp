@@ -1,16 +1,13 @@
 import { getLocaleCurrencyCode } from '@angular/common';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { Foods } from 'src/app/Shared/Models/food';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
-
-  constructor() { }
-
-getAll():Foods[]{
-  return[
+  private foods=[
     {
       id:1,
       price: 399,
@@ -21,7 +18,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food.jpg',
     },
     {
-      id:1,
+      id:2,
       price: 399,
       name:'Burger',
       favourite:false,
@@ -30,7 +27,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food1.jpg',
     },
     {
-      id:1,
+      id:3,
       price: 399,
       name:'Sandwich',
       favourite:false,
@@ -39,7 +36,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food2.jpg',
     },
     {
-      id:1,
+      id:4,
       price: 399,
       name:'Bread/Butter',
       favourite:false,
@@ -48,7 +45,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food3.jpg',
     },
     {
-      id:1,
+      id:5,
       price: 399,
       name:'Momos',
       favourite:false,
@@ -57,7 +54,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food4.jpg',
     },
     {
-      id:1,
+      id:6,
       price: 399,
       name:'Samose',
       favourite:false,
@@ -66,7 +63,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food5.jpg',
     },
     {
-      id:1,
+      id:7,
       price: 399,
       name:'Spring Roll',
       favourite:false,
@@ -75,7 +72,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food6.jpg',
     },
     {
-      id:1,
+      id:8,
       price: 399,
       name:'Noodles',
       favourite:false,
@@ -84,7 +81,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food7.jpg',
     },
     {
-      id:1,
+      id:9,
       price: 399,
       name:'Omelette',
       favourite:false,
@@ -93,7 +90,7 @@ getAll():Foods[]{
       imageUrl:'/assets/food8.jpg',
     },
     {
-      id:1,
+      id:10,
       price: 399,
       name:'Fried Rice',
       favourite:false,
@@ -103,5 +100,39 @@ getAll():Foods[]{
     },
   
   ];
+  public cartItemList: any=new BehaviorSubject<any>({});
+  public productList= new BehaviorSubject<any>([]);
+
+  constructor() { }
+  
+addtocart(foodid : number,quantity: number=1)
+{
+const cartItems=this.cartItemList.value;
+if(cartItems[foodid])
+  {
+    cartItems[foodid]+=quantity;
+  }
+else
+{
+  cartItems[foodid]=quantity;
+}
+this.cartItemList.next(cartItems)
+}
+
+removefromCart(foodid : number)
+{
+  const cartItems=this.cartItemList.value;
+  delete cartItems[foodid]
+  alert("Are you Sure You want to Delete?")
+  this.cartItemList.next(cartItems)
+}
+
+getfoodbyid(foodid : number)
+{
+  return this.foods.find(food=>food.id===foodid)
+}
+
+getAll():Foods[]{
+  return this.foods;
 }
 }

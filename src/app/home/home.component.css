@@ -51,3 +51,13 @@ p
     justify-content: right;
     display: inline;
 }
+.btn-primary{
+    background-color: #5e17eb!important;
+    border-color: #5e17eb;
+}
+
+.zoom :hover
+{
+   
+  transform: scale(1.02);
+}

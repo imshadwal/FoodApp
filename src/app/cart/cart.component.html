@@ -1,0 +1,52 @@
+<ng-container *ngIf="cartItems.length">
+    <div class="card-table">
+        <div class="card-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr.No.</th>
+                        <th>Food Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cartitem of cartItems; let i = index">
+                        <th>{{i+1}}</th>
+                        <th>{{cartitem.name}}</th>
+                        <th>{{cartitem.price}}</th>
+                        <th>{{cartItemsCount[cartitem.id]}}</th>
+                        <th><button (click)="this.fs.removefromCart(cartitem.id)">Delete</button></th>
+                    </tr>
+                    <tr style="border: 0px;">
+                        <button type="button" class="btn btn-primary Payment" data-toggle="button"  style="font-size: 10px;">
+                            Make Payment
+                            </button>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</ng-container>
+
+
+
+<ng-container *ngIf="!cartItems.length">
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title">My Cart</h2>
+        </div>
+        <div class="center">
+            <img src="../../assets/4.svg" class="emptycart" alt="">
+            <br>
+            <br>
+            <h4>Your cart is empty!</h4> 
+            <h4>Why to Wait? <br> Buy Food Now</h4> 
+            <button class="btn btn-primary" routerLink="/">Buy Food</button>
+        
+        </div>
+    </div>
+</ng-container>

@@ -1,17 +1,17 @@
 <header>
     <div class="container1">
-        <a href="#" routerLink="/" class="logo"> Food Delivery App </a>
+        <a href="#" routerLink="/" class="logo"> Food Junction</a>
         <app-search></app-search>
         <nav>
             <ul>
                 <li>
-                   <a href="#" id="Login" class="Login"> Login </a>
+                  <app-modal></app-modal> 
                 </li>
                 <li>
-                   <a href="#" id="SignUp" class="SignUp"> SignUp </a>
+                   <app-signupmodal></app-signupmodal>
                 </li>
                 <li>
-                    <a class="cart"><fa-icon [icon]="shoppingcart"></fa-icon></a>
+                    <a class="cart"routerLink="Cart"><fa-icon [icon]="shoppingcart" ></fa-icon></a>
                 </li>
                 
             </ul>
