@@ -11,13 +11,14 @@ ul
 .MainHeader{
     height: 24rem;
     width: 25 rem;
-    border: 1px solid #5e17eb;
+    border: 1px solid black;
     border-radius: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     color: #5e17eb;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.7), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 li a:hover{
@@ -60,4 +61,5 @@ p
 {
    
   transform: scale(1.02);
+  
 }
