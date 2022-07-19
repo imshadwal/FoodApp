@@ -24,7 +24,7 @@ import { SignupmodalComponent } from './signupmodal/signupmodal.component';
     ModalComponent,
     CartComponent,
     CorouselComponent,
-    SignupmodalComponent
+    SignupmodalComponent,
   ],
   imports: [
     BrowserModule,
